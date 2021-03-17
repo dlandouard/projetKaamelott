@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: black;
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
+#logo {
+  background: url("images/Kamelott2.png") no-repeat center;
+  background-size: cover;
+  width: 35%;
+  height: 100%;
+  margin: 10px;
+}
+
+#btn {
+  width: 65%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px;
+  padding: 5px;
+}
+
+#burger {
+  background: url("images/iconeBurger.svg") no-repeat center;
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+}
+
+.articles {
+  width: 90%;
+  margin: 5px auto 5px auto;
+}
+
+.articles img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  margin: 5px auto 5px auto;
+  box-shadow: 5px 5px 5px grey;
+}
