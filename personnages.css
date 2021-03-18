@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: black;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+body {
+    background: url(media/fondimage.jpg);
+}
+
+#logo {
+    background: url("images/Kamelott2.png") no-repeat center;
+    background-size: cover;
+    width: 35%;
+    height: 100%;
+    margin: 10px;
+  }
+  
+  #btn {
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  #burger {
+    background: url("images/iconeBurger.svg") no-repeat center;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+  }
+  
+    section {
+        width: 100%;
+        
+    }  
+    #Arthur {
+        background-color: grey;
+        margin: 30px auto 30px auto;
+        border : 3px solid white;
+        border-radius: 16px;
+        width: 90%;
+        
+    }
+    #Arthur h2 {
+        color: #efeded;
+        text-align: center;
+    padding: 5px;
+    }
+    #Arthur img{
+        width: 100%;
+        border-radius: 12px;
+        
+    }
+    #Arthur p {
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
