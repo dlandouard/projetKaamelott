@@ -4,37 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
     <div id="logo">
         <img src="media/Kamelott2.png" alt="kamelott">
     <nav>
-        <ul>
-            <li><a  href="#">Accueil</a></li>
-            <li><a  href="#">Personnage</a></li>
-            <li><a  href="#">Histoire</a></li>
-            <li><a  href="#">Contact</a></li>
+        <div id="burger">
+            <img src="media/iconeBurger.svg" alt="burgercss">
 
-        </ul>
+        </div>
+       
+       <ul>
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#">Personnage</a></li>
+            <li><a href="#">Histoire</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul> 
+    
+
+        
     </nav>
+</header>
     <article>
-        <img src="">
+        <div id="photo">
+        <img src="media/arthur.jpg">
+        </div>
     </article>
-    <section>
-        <form method="post">
-            <label for="nom"></label>
+    <div class="formule">
+     <form method="post">
+            <label class="align" for="nom"></label>
             <input type="text" placeholder="Nom utilisateur...">
-            <label for="email"></label>
+            <label class="align" for="email"></label>
             <input type="text" placeholder="Email utilisateur...">
-            <textarea placeholder="Message..."></textarea>
+            <textarea class="align" placeholder="Message..."></textarea>
+            <button id="onebtn" type="submit">Envoyer</button>
 
     </form>
-    </section>
-    <footer>
+    </div>
+    
+    <footer class="uneform">
 
     </footer>
+    <script src="contact.js"></script>
     
 </body>
 </html>
