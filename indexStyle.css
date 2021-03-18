@@ -8,6 +8,7 @@ header {
   display: flex;
   align-items: center;
   height: 70px;
+  width: 100%;
 }
 
 #logo {
@@ -46,5 +47,12 @@ header {
   display: block;
   border-radius: 10px;
   margin: 5px auto 5px auto;
+  box-shadow: 5px 5px 5px grey;
+}
+
+#video {
+  max-width: 100%;
+  margin: 5px auto 5px auto;
+  display: block;
   box-shadow: 5px 5px 5px grey;
 }
