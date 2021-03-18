@@ -36,10 +36,12 @@ header {
 .articles {
   width: 90%;
   margin: 5px auto 5px auto;
+  background: url("images/parcheminBG.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .articles img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   display: block;
   border-radius: 10px;
