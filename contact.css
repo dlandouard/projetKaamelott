@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Orbitron:wght@500&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    z-index: -1;
+    background-image: url(media/fondimage.jpg)
+}
+#logo img
+{
+    width: 35%;
+    height: 70px;
+}
+
+nav
+{
+    width: 65%;
+    height: 70px;
+    background-color: black;
+    float: right;
+}
+nav ul, nav ul li, nav ul li a {
+    display: none;
+}
+
+nav #burger img{
+    float: right;
+    height: 30px;
+    padding-top: 20px;
+}
+article
+{
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+
+#photo
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+#photo img
+{
+   width: 90%;
+   border-radius: 10px;
+   height: 300px;
+   margin-top: 1rem;
+}
+
+.formule
+{
+    width: 100%;
+    /* height: 1000px; */
+    display: flex;
+    justify-content: center;
+}
+.formule form
+{
+   background-color: black;
+   border-radius: 10px;
+   width: 90%;
+   /* height: 200px; */
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+
+
+}
+
+.formule form input
+{
+    
+    width: 80%;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 1rem;
+}
+
+.formule form textarea
+{
+
+    width: 80%;
+    padding:15px;
+    height: 80px;
+    border-radius: 6px;
+    margin: 1rem;
+    
+}
+#onebtn
+{
+    background: cadetblue;
+    border-radius: 6px;
+    margin: 1rem; 
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+#onebtn:hover
+{
+    background: rgba(255, 136, 1, 0.89);
+    margin: 1rem; 
+    display: inline-block;
+    padding: 10px;
+
+
+}
+.uneform
+{
+    background: black;
+    width: 100%;
+    height: 200px;
+    margin-top: 1rem;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px)
+
+{
+    nav #burger img
+    {
+        display: none;
+    }
+    header #logo img 
+    {
+       display: block;
+       width: 25%;
+    }
+    nav {
+        display: block;
+        width: 75%;
+    }
+    nav ul 
+    {
+        display: block;
+        width: 40%;
+    }
+    nav ul li {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+
+    }
+    nav ul li a {
+        color: rgba(255, 136, 1, 0.89);    
+    
+    }
+    nav ul li a:hover{
+        text-decoration: underline;
+        color: rgb(170, 154, 154);
+    }
+    #photo img {
+        height: 450px;
+        border-radius: 18px;
+    }
+    #onebtn{
+        padding: 18px;
+    }
+    #onebtn:hover
+{
+    background: rgba(255, 136, 1, 0.89);
+    display: inline-block;
+    padding: 18px;
+
+
+}
+
+
+    
+}
+@media all and (min-width: 1024px)
+{
+    nav #burger img
+    {
+        display: none;
+    }
+    header #logo img {
+        width: 15%;
+    }
+    nav {
+        width: 85%;
+    }
+    #photo img {
+        height: 800px;
+        border-radius: 25px;
+    }
+    .formule form input
+{
+   
+    margin: 2rem;
+}
+
+.formule form textarea
+{
+
+    margin: 2rem;
+    height: 110px;
+    
+}
+#onebtn
+{
+    margin: 2rem; 
+    
+
+}
+.uneform
+{
+    margin-top: 2rem;
+}
+#onebtn{
+    padding: 25px;
+}
+#onebtn:hover
+{
+    background: rgba(255, 136, 1, 0.89);
+    display: inline-block;
+    padding: 25px;
+    margin: 2rem;
+
+
+}
+
+   
+}
