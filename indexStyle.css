@@ -174,12 +174,8 @@ header {
   visibility: hidden;
 }
 
-@media screen and (min-width: 640px) {
-  #video {
-    width: 79%;
-    height: 640px;
-    margin: 5px auto 5px auto;
-    display: block;
-    box-shadow: 5px 5px 5px grey;
-  }
+
+.persoCitation {
+  text-align: center !important;
+  font-size: 1.5em;
 }
