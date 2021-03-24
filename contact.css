@@ -301,15 +301,18 @@ article
     {
        
        width: 25%;
+       height: 90px;
     }
     nav {
        
         width: 75%;
+        height: 90px;
     }
     nav ul 
     {
         display: flex;
         justify-content: flex-end;
+        padding-top: 20px;
        
        
     }
@@ -533,9 +536,11 @@ article
     }
     header #logo img {
         width: 15%;
+        height: 90px;
     }
     nav {
         width: 85%;
+        height: 90px;
     }
     nav ul 
     {
@@ -550,7 +555,7 @@ article
         text-decoration: none;
         list-style: none;
         align-items: center;
-        padding: 18px;
+        padding: 29px;
         font-family: 'Permanent Marker', cursive;
 
 
