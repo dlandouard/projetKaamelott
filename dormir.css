@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.monimage
+{
+background: url(media/dormir.jpg);
+width: 70%;
+height: 80vh;
+margin: auto auto;
+z-index: -1;
+border-radius: 25px;
+display: flex;
+flex-direction: column;
+align-items:center;
+
+
+}
+.monimage p
+{
+    width: 50%;
+    color: #fff;
+    opacity: 0.5;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 6rem;
+    
+}
+.monimage i{
+   z-index: 1;
+   font-size: 250px;
+   color: yellow;
+   opacity: 0.5;
+   padding-top: 4rem;
+}
+.container
+{
+    background: rgba(0, 0, 0, 0.123);
+}
+
+/* Iphone */
+
+/* .monimage
+{
+background: url(media/dormir.jpg);
+width: 80%;
+height: 70vh;
+margin: auto auto;
+z-index: -1;
+border-radius: 25px;
+display: flex;
+flex-direction: column;
+align-items:center;
+
+
+}
+.monimage p
+{
+    width: 70%;
+    color: #fff;
+    opacity: 0.5;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 6rem;
+    
+}
+.monimage i{
+   z-index: 1;
+   font-size: 100px;
+   color: yellow;
+   opacity: 0.5;
+   padding-top: 4rem;
+} */
+
+/* Ipad */
+
+/* .monimage{
+    background: url(media/dormir.jpg);
+    width: 80%;
+    height: 70vh;
+    margin: auto auto;
+    z-index: -1;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+    
+    }
+    .monimage p
+    {
+        width: 70%;
+        color: #fff;
+        opacity: 0.5;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 6rem;
+        
+    }
+    .monimage i{
+       z-index: 1;
+       font-size: 150px;
+       color: yellow;
+       opacity: 0.5;
+       padding-top: 4rem;
+    }
+ */
