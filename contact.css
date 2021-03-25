@@ -18,6 +18,8 @@ body
 {
     width: 35%;
     height: 70px;
+    animation: 2s;
+    
 }
 
 nav
@@ -26,6 +28,9 @@ nav
     height: 70px;
     background-color: black;
     float: right;
+    animation: 2s;
+    
+    
 }
 nav ul{
     display: none;
@@ -354,7 +359,7 @@ article
 {
     background: url(media/lefond.jpg);
     width: 100%;
-    height: 380px;
+    height: 430px;
     margin-top: 1rem;
    
 }
@@ -528,7 +533,7 @@ article
 
     
 }
-@media all and (min-width: 1024px)
+@media screen and (min-width: 1024px)
 {
     nav #burger img
     {
@@ -537,6 +542,7 @@ article
     header #logo img {
         width: 15%;
         height: 90px;
+       
     }
     nav {
         width: 85%;
@@ -613,7 +619,7 @@ article
 .uneform{
     background:url(media/lefond.jpg);
     background-size: cover;
-    height: 480px;
+    height: 540px;
 
 }
 .mesblock

@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8ea583dfaf.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Document</title>
 </head>
@@ -20,10 +22,10 @@
         </div>
        
         <ul>
-            <li><a href="#">Acceuil</a></li>
-            <li><a href="#">Personnage</a></li>
-            <li><a href="#">Histoire</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a  href="index.html">Accueil</a></li>
+            <li><a  href="personnages.html">Personnages</a></li>
+            <li><a  href="histoire.html">Histoire</a></li>
+            <li><a  href="contact.html">Contact</a></li>
         </ul> 
     
 
@@ -35,14 +37,14 @@
         <img src="media/arthur.jpg">
         </div>
     </article>
-    <div class="formule">
+    <div class="formule" data-aos="zoom-in" data-aos-duration="1000" >
         <form method="post">
             <label class="align" for="nom"></label>
-            <input type="text" placeholder="Nom utilisateur...">
-            <label class="align" for="email"></label>
-            <input type="text" placeholder="Email utilisateur...">
-            <textarea class="align" placeholder="Message..."></textarea>
-            <button id="onebtn" type="button">Envoyer</button>
+            <input type="text" placeholder="Nom utilisateur..." data-aos="fade-right" data-aos-duration="2000" >
+            <label class="align" for="email" ></label>
+            <input type="text" placeholder="Email utilisateur..." data-aos="fade-right" data-aos-duration="2000">
+            <textarea class="align" placeholder="Message..." data-aos="fade-right" data-aos-duration="2000"></textarea>
+            <button id="onebtn" type="button" data-aos="zoom-in" data-aos-duration="1500">Envoyer</button>
             
         </form>
     </div>
@@ -57,7 +59,7 @@
     
     <footer class="uneform">
         <div class="mesblock">
-        <div class="footer-right">
+        <div class="footer-right" data-aos="fade-right" data-aos-duration="3000" >
         <i class="fas fa-drafting-compass"></i>
         <div id="premiereprenom">
         <h2><em>Thomas Thbaut</em></h2>
@@ -69,14 +71,14 @@
         </div>
         </div>
        <div class="trait"></div>
-        <div class="footer-left">
+        <div class="footer-left" data-aos="fade-left" data-aos-duration="2400" >
         <i id="font1" class="fab fa-js-square"></i>
         <i id="font2" class="fab fa-html5"></i>
         <i id="font3" class="fab fa-css3-alt"></i>
         </div>
         </div>
 
-        <div id="mention">
+        <div id="mention" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2400">
             <p><strong>@2021, kamelottCorp</strong></p>
             <p><strong>autorisations au-delà de cette license peuvent etre obtenu
                 aupres de kamelottCorp</strong>
@@ -86,6 +88,9 @@
         
     </footer>
     <script src="contact.js"></script>
+    <script>
+        AOS.init();
+      </script>
     
 </body>
 </html>
