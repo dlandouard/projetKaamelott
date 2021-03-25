@@ -111,8 +111,6 @@ header {
 
 .containerMain {
  padding-top: 90px;
- display: flex;
- flex-wrap: wrap;
 }
 
 /*image d'accueil*/
@@ -135,7 +133,7 @@ header {
 }
 /*mises en formes des classes articles*/
 .articles {
-  width: 300px;
+  width: 90%;
   margin: 10px auto 10px auto;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
@@ -335,6 +333,24 @@ header {
     color: rgb(170, 154, 154);
   }
 
+  #webscalibur {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    max-width: 1500px;
+    border-radius: 0 0 30px 30px;
+  }
+
+  #webscalibur img {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto 0 auto;
+  }
+  #webscalibur figcaption {
+    font-size: 2rem;
+  }
+  
   .uneform {
     background: url(media/lefond.jpg);
     background-size: cover;

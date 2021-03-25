@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="indexStyle.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="personnages.css" rel="stylesheet" />
+    <script
+    src="https://kit.fontawesome.com/8ea583dfaf.js"
+    crossorigin="anonymous"
+  ></script>
     <title>Les Persos de Kaamelott</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div id="logo">logo</div>
-            <div id="menu-burger">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        <nav id="menu">
-            <ul>
-                <li><a  href="index.html">Accueil</a></li>
-                <li><a  href="personnages.html">Personnages</a></li>
-                <li><a  href="histoire.html">Histoire</a></li>
-                <li><a  href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <div id="logo">logo</div>
+      <div id="menu-burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="personnages.html">Personnages</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-  <section class="articles" id="arthur">
+    <section class="containerMain">
+      <section class="articles" id="arthur">
         <h2>Arthur Pendragon</h2>
-   </section>
+      </section>
 
-   <section class="articles" id="karadoc">
-    <h2>Karadoc de Vannes</h2>
-</section>
+      <section class="articles" id="karadoc">
+        <h2>Karadoc de Vannes</h2>
+      </section>
 
-<section class="articles" id="perceval">
-    <h2>Perceval de Galles</h2>
-</section>
+      <section class="articles" id="perceval">
+        <h2>Perceval de Galles</h2>
+      </section>
 
-<section class="articles" id="leodagan">
-    <h2>Léodagan <br/><em>(dit « le Sanguinaire »)</em></h2>
-</section>
- <script src="main.js"></script>
-    <footer></footer>
-</body>
+      <section class="articles" id="leodagan">
+        <h2>Léodagan <br /><em>(dit « le Sanguinaire »)</em></h2>
+      </section>
+    </section>
+    <script src="main.js"></script>
+    <script src="persoRandom.js"></script>
+    <footer class="uneform">
+        <div class="mesblock">
+          <div class="footer-right">
+            <i class="fas fa-drafting-compass"></i>
+            <div id="premiereprenom">
+              <h2><em>Thomas Thbaut</em></h2>
+              <h2><em>Damien Landouard</em></h2>
+            </div>
+            <div id="deuxiemeprenom">
+              <h2><em>Sylvain Rey</em></h2>
+              <h2><em>Alexander Abbas</em></h2>
+            </div>
+          </div>
+          <div class="trait"></div>
+          <div class="footer-left">
+            <i id="font1" class="fab fa-js-square"></i>
+            <i id="font2" class="fab fa-html5"></i>
+            <i id="font3" class="fab fa-css3-alt"></i>
+          </div>
+        </div>
+  
+        <div id="mention">
+          <p><strong>@2021, kamelottCorp</strong></p>
+          <p>
+            <strong
+              >autorisations au-delà de cette license peuvent etre obtenu aupres
+              de kamelottCorp</strong
+            >
+          </p>
+          <p><strong>créé par kamelott.com</strong></p>
+        </div>
+      </footer>
+  </body>
 </html>
