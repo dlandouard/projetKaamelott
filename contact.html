@@ -13,53 +13,58 @@
 </head>
 <body>
     <header>
-    <div id="logo">
-        <img src="https://media.giphy.com/media/unIE0q9tcHp3Qlu4Bm/giphy.gif" alt="kamelott">
-    <nav>
-        <div id="burger">
-            <img src="media/iconeBurger.svg" alt="burgercss">
-
+        <div id="logo"><a href="index.html"></a></div>
+        <div id="menu-burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
-       
-        <ul>
-            <li><a  href="index.html">Accueil</a></li>
-            <li><a  href="personnages.html">Personnages</a></li>
-            <li><a  href="histoire.html">Histoire</a></li>
-            <li><a  href="contact.html">Contact</a></li>
-        </ul> 
-    
 
-        
-    </nav>
-</header>
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a  href="index.html">Accueil</a></li>
+                <li><a  href="personnages.html">Personnages</a></li>
+                <li><a  href="histoire.html">Histoire</a></li>
+                <li><a  href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
+            </header>
+
     <article>
-        <div id="photo">
-        <img src="media/arthur.jpg">
-        </div>
+            <div id="photo" data-aos="flip-right" data-aos-duration="2000">
+                <img src="media/team_Kaamelotts.jpg">
+            </div>
     </article>
-    <div class="formule" data-aos="zoom-in" data-aos-duration="1000" >
+
+             <div class="formule" data-aos="zoom-in" data-aos-duration="1000" >
+
         <form method="post">
             <label class="align" for="nom"></label>
             <input type="text" placeholder="Nom utilisateur..." data-aos="fade-right" data-aos-duration="2000" >
             <label class="align" for="email" ></label>
             <input type="text" placeholder="Email utilisateur..." data-aos="fade-right" data-aos-duration="2000">
             <textarea class="align" placeholder="Message..." data-aos="fade-right" data-aos-duration="2000"></textarea>
-            <button id="onebtn" type="button" data-aos="zoom-in" data-aos-duration="1500">Envoyer</button>
+
+            <button id="onebtn" type="button">Envoyer</button>
+
             
         </form>
     </div>
     <div class="container">
     <div class="monimage">
         <i id="croix" class="fas fa-times"></i>
-       <p>Desole nous sommes actuellement occupe a la quete du grale nous ne sommes pas joignable</p>
+       <p>Désolé nous sommes actuellement occupé à la quete du gralle nous ne sommes pas joignable</p>
        <i id=warning class="fas fa-exclamation-triangle"></i>
 
    </div>
    </div>
     
-    <footer class="uneform">
-        <div class="mesblock">
-        <div class="footer-right" data-aos="fade-right" data-aos-duration="3000" >
+
+  <footer class="uneform" >
+        <div class="mesblock" data-aos="fade-up" data-aos-duration="1000">
+        <div class="footer-right">
+
         <i class="fas fa-drafting-compass"></i>
         <div id="premiereprenom">
         <h2><em>Thomas Thbaut</em></h2>
@@ -78,7 +83,8 @@
         </div>
         </div>
 
-        <div id="mention" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2400">
+           <div id="mention" data-aos="zoom-in" data-aos-duration="1000">
+
             <p><strong>@2021, kamelottCorp</strong></p>
             <p><strong>autorisations au-delà de cette license peuvent etre obtenu
                 aupres de kamelottCorp</strong>
@@ -88,7 +94,8 @@
         
     </footer>
     <script src="contact.js"></script>
-    <script>
+
+    <script> 
         AOS.init();
       </script>
     
