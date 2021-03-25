@@ -101,10 +101,11 @@ header {
   border-radius: 0 0 0 10px;
   text-align: right;
   padding-right: 10px;
+  padding-top: 15px;
   color: black;
-  line-height: 2;
+  line-height: 3;
   transition-duration: 0.5s;
-  z-index: 10000000;
+  z-index: 100;
 }
 
 /*image d'accueil*/
@@ -161,6 +162,14 @@ header {
   padding: 5px;
   text-align: justify;
 }
+
+#séparateurActu {
+  width: 80%;
+  margin: 10px auto;
+  height: 1px;
+  background-color: #000;
+}
+
 /* intégration vidéo teaser*/
 #video {
   max-width: 100%;
@@ -174,10 +183,96 @@ header {
   visibility: hidden;
 }
 
-
 .persoCitation {
   text-align: center !important;
   font-size: 1.5em;
+}
+
+.uneform {
+  background: url(media/lefond.jpg);
+  width: 100%;
+  height: 230px;
+  margin-top: 1rem;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 1px auto 1px auto;
+  padding-top: 1rem;
+}
+.footer-right i {
+  font-size: 25px;
+  color: white;
+  order: 2;
+}
+#premiereprenom {
+  order: 1;
+  text-align: center;
+}
+#deuxiemeprenom {
+  order: 3;
+  text-align: center;
+}
+.footer-right i:hover {
+  background-color: white;
+  color: #000;
+  border-radius: 100% 100% 100% 100%;
+  padding: 5px 5px 5px 5px;
+  transition: 0.5s;
+}
+.footer-right h2 {
+  font-size: 15px;
+  color: white;
+  height: 25px;
+  font-family: "Permanent Marker", cursive;
+}
+.trait {
+  width: 80%;
+  margin: 10px auto;
+  height: 1px;
+  background-color: #fff;
+}
+
+.footer-left {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.footer-left i {
+  font-size: 30px;
+  color: white;
+}
+#font1:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+  color: yellow;
+}
+#font2:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+  color: orange;
+}
+#font3:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+  color: rgb(85, 96, 255);
+}
+#mention {
+  width: 90%;
+  margin: 2px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+#mention p {
+  padding: 3px 3px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 640px) {
@@ -187,5 +282,237 @@ header {
     margin: 5px auto 5px auto;
     display: block;
     box-shadow: 5px 5px 5px grey;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #menu-burger {
+    display: none;
+  }
+  header {
+    height: 90px;
+  }
+  #logo {
+    height: 95%;
+    width: 285px;
+    background-size: cover;
+  }
+  #menu {
+    position: static;
+    display: flex;
+    background: none;
+    justify-content: flex-end;
+    width: 70%;
+    height: 100%;
+    box-shadow: none;
+    padding: auto;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+  }
+  nav ul li {
+    text-decoration: none;
+    list-style: none;
+  }
+  nav ul li a {
+    color: rgba(255, 136, 1, 0.89);
+    font-size: 24px;
+    font-weight: normal;
+    font-family: "Permanent Marker", cursive;
+    text-shadow: none;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(170, 154, 154);
+  }
+
+  #webscalibur {
+    height: 90vh;
+    width: 90%;
+    max-width: 1500px;
+    border-radius: 0 0 30px 30px;
+  }
+
+  #webscalibur img {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto 0 auto;
+  }
+  #webscalibur figcaption {
+    font-size: 2rem;
+  }
+  section {
+    width: 90%;
+    max-width: 1500px;
+    height: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    margin-top: 2em;
+  }
+  #forDesktopLayout {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0;
+    padding: 2em;
+  }
+  .articles h2 {
+    padding-bottom: 2em;
+    width: 100%;
+  }
+
+  .articles img {
+    width: 40%;
+    margin: 0 5% 0 5%;
+  }
+
+  .articles p {
+    padding: 0;
+    margin: auto 0 auto 0;
+    width: 45%;
+    font-size: 1em;
+  }
+  .articles figure {
+    width: 40%;
+    margin: auto 5% auto 5%;
+  }
+  .articles figure img {
+    width: 100%;
+  }
+  #imageDroite {
+    order: +1;
+  }
+
+  .actu {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .actu img {
+    width: 100%;
+  }
+
+  .actu p {
+    width: 95%;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .uneform {
+    background: url(media/lefond.jpg);
+    background-size: cover;
+    height: 480px;
+  }
+  .mesblock {
+    width: 100%;
+    height: 300px;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .footer-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    padding-top: 3rem;
+  }
+  .footer-right i {
+    font-size: 50px;
+    color: white;
+    padding-bottom: 15px;
+    order: unset;
+  }
+  .footer-right i:hover {
+    background-color: white;
+    color: #000;
+    border-radius: 100% 100% 100% 100%;
+    padding: 15px 15px 15px 15px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .footer-right h2 {
+    font-size: 25px;
+    color: white;
+    height: 50px;
+    font-family: "Permanent Marker", cursive;
+  }
+  #deuxiemeprenom {
+    margin-top: -5px;
+  }
+
+  .trait {
+    height: 300px;
+    color: white;
+    background-color: white;
+    width: 3px;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 0px;
+  }
+  .footer-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+  }
+
+  .footer-left i {
+    font-size: 80px;
+    color: white;
+    height: 100px;
+  }
+
+  #font1 {
+    transform: rotate(-45deg);
+  }
+  #font2 {
+    transform: rotate(45deg);
+  }
+  #font3 {
+    transform: rotate(-45deg);
+  }
+  #font1:hover {
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out 0s;
+    color: yellow;
+  }
+  #font2:hover {
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out 0s;
+    color: orange;
+  }
+  #font3:hover {
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out 0s;
+    color: rgb(85, 96, 255);
+  }
+  #mention {
+    width: 50%;
+    margin-top: 4rem;
+  }
+  #mention p {
+    font-size: 20px;
   }
 }
