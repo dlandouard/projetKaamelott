@@ -5,43 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8ea583dfaf.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Document</title>
 </head>
 <body>
     <header>
-    <div id="logo">
-        <img src="https://media.giphy.com/media/unIE0q9tcHp3Qlu4Bm/giphy.gif" alt="kamelott">
-    <nav>
-        <div id="burger">
-            <img src="media/iconeBurger.svg" alt="burgercss">
-
+        <div id="logo"><a href="index.html"></a></div>
+        <div id="menu-burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
-       
-        <ul>
-            <li><a href="#">Acceuil</a></li>
-            <li><a href="#">Personnage</a></li>
-            <li><a href="#">Histoire</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul> 
-    
-
-        
-    </nav>
-</header>
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a  href="index.html">Accueil</a></li>
+                <li><a  href="personnages.html">Personnages</a></li>
+                <li><a  href="histoire.html">Histoire</a></li>
+                <li><a  href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
+            </header>
     <article>
-        <div id="photo">
-        <img src="media/arthur.jpg">
-        </div>
+            <div id="photo" data-aos="flip-right" data-aos-duration="2000">
+                <img src="media/team_Kaamelotts.jpg">
+            </div>
     </article>
-    <div class="formule">
+             <div class="formule" data-aos="zoom-in" data-aos-duration="1000" >
         <form method="post">
             <label class="align" for="nom"></label>
-            <input type="text" placeholder="Nom utilisateur...">
-            <label class="align" for="email"></label>
-            <input type="text" placeholder="Email utilisateur...">
-            <textarea class="align" placeholder="Message..."></textarea>
+            <input type="text" placeholder="Nom utilisateur..." data-aos="fade-right" data-aos-duration="2000" >
+            <label class="align" for="email" ></label>
+            <input type="text" placeholder="Email utilisateur..." data-aos="fade-right" data-aos-duration="2000">
+            <textarea class="align" placeholder="Message..." data-aos="fade-right" data-aos-duration="2000"></textarea>
             <button id="onebtn" type="button">Envoyer</button>
             
         </form>
@@ -49,14 +48,14 @@
     <div class="container">
     <div class="monimage">
         <i id="croix" class="fas fa-times"></i>
-       <p>Desole nous sommes actuellement occupe a la quete du grale nous ne sommes pas joignable</p>
+       <p>Désolé nous sommes actuellement occupé à la quete du gralle nous ne sommes pas joignable</p>
        <i id=warning class="fas fa-exclamation-triangle"></i>
 
    </div>
    </div>
     
-    <footer class="uneform">
-        <div class="mesblock">
+  <footer class="uneform" >
+        <div class="mesblock" data-aos="fade-up" data-aos-duration="1000">
         <div class="footer-right">
         <i class="fas fa-drafting-compass"></i>
         <div id="premiereprenom">
@@ -76,7 +75,7 @@
         </div>
         </div>
 
-        <div id="mention">
+           <div id="mention" data-aos="zoom-in" data-aos-duration="1000">
             <p><strong>@2021, kamelottCorp</strong></p>
             <p><strong>autorisations au-delà de cette license peuvent etre obtenu
                 aupres de kamelottCorp</strong>
@@ -86,6 +85,9 @@
         
     </footer>
     <script src="contact.js"></script>
+    <script> 
+        AOS.init();
+      </script>
     
 </body>
 </html>
