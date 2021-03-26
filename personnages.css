@@ -59,6 +59,12 @@ header {
   margin: 20px;
 }
 
+#logo a {
+  display : block;
+  width : 100%;
+  height : 100%;
+}
+
 /* changement du CSS pour transformation du menu en croix */
 #menu-burger {
   position: absolute;
@@ -115,24 +121,7 @@ header {
  flex-wrap: wrap;
 }
 
-/*image d'accueil*/
-#webscalibur {
-  margin: 10px auto 10px auto;
-  background-color: rgb(0, 0, 0, 0.8);
-  border-radius: 0 0 5px 5px;
-}
 
-#webscalibur img {
-  width: 100%;
-}
-
-#webscalibur figcaption {
-  width: 100%;
-  color: white;
-  font: bold smaller sans-serif;
-  text-align: center;
-  padding: 5px;
-}
 /*mises en formes des classes articles*/
 .articles {
   width: 300px;

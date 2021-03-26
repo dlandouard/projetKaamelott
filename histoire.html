@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <div id="logo">logo</div>
+      <div id="logo"><a href="index.html"></a></div>
       <div id="menu-burger">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -31,15 +31,13 @@
     <section class="containerMain">
       <section class="articles">
         <h2>Film</h2>
-        <div class="video-container">
-          <iframe
-            id="video"
-            src="https://www.youtube.com/embed/hCKPvMT1E1I"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/hCKPvMT1E1I"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
 
         <p>
           Kaamelott est une série télévisée française humoristique et dramatique
@@ -67,45 +65,55 @@
         </p>
       </section>
       <section class="articles">
-        <h2>Bd</h2>
-        <img src="media/bdKaamelott.jpg" alt="image bd" />
-        <p>
-          Directement inspirée de la série télévisée éponyme, Kaamelott décrit
-          la vie quotidienne du roi Arthur et de ses Chevaliers de la Table
-          ronde, incapables, pleutres ou violents. La bande dessinée permet de
-          repousser les frontières des possibilités narratives imposées par le
-          format télévisé. En effet, l’histoire revêt un aspect plus « heroic
-          fantasy » que la série télévisée et permet donc au lecteur de
-          parcourir nombre de décors extérieurs et de situations irréalisables à
-          la télévision – comme une avalanche engloutissant le roi et ses amis
-          dans le premier tome, L’Armée du nécromant. La série de bande dessinée
-          Kaamelott propose une histoire complète par tome, parallèlement à la
-          série télévisée, avec les mêmes personnages, les mêmes comportements,
-          mais avec cette fois une issue variable : le dénouement de L’Armée du
-          nécromant est ainsi favorable aux personnages, le succès est enfin au
-          rendez-vous.
-        </p>
+        <h2>BD</h2>
+        <div class="miseEnLigne">
+          <div id="slider">
+            <figure>
+              <img src="media/bdKaamelott.jpg" alt="image bd" />
+              <img src="media/bd2Kaamelott.jpg" alt="image bd" />
+              <img src="media/bd3Kaamelott.jpg" alt="image bd" />
+            </figure>
+          </div>
+          <p>
+            Directement inspirée de la série télévisée éponyme, Kaamelott décrit
+            la vie quotidienne du roi Arthur et de ses Chevaliers de la Table
+            ronde, incapables, pleutres ou violents. La bande dessinée permet de
+            repousser les frontières des possibilités narratives imposées par le
+            format télévisé. En effet, l’histoire revêt un aspect plus « heroic
+            fantasy » que la série télévisée et permet donc au lecteur de
+            parcourir nombre de décors extérieurs et de situations irréalisables
+            à la télévision – comme une avalanche engloutissant le roi et ses
+            amis dans le premier tome, L’Armée du nécromant. La série de bande
+            dessinée Kaamelott propose une histoire complète par tome,
+            parallèlement à la série télévisée, avec les mêmes personnages, les
+            mêmes comportements, mais avec cette fois une issue variable : le
+            dénouement de L’Armée du nécromant est ainsi favorable aux
+            personnages, le succès est enfin au rendez-vous.
+          </p>
+        </div>
       </section>
       <section class="articles">
         <h2>La légende Roi Arthur</h2>
-        <img src="media/roiArthur.jpg" alt="Roi Arthur" />
-        <p>
-          Le roi Arthur ou Arthur Pendragon est, d'après les romances
-          médiévales, un seigneur breton qui aurait organisé la défense des
-          peuples celtes des îles Britanniques et de Bretagne armoricaine face
-          aux envahisseurs germaniques à la fin du Ve siècle ou au début du VIe
-          siècle. La légende d'Arthur est principalement inspirée par le
-          folklore1 et l'invention littéraire, et son existence historique n'est
-          pas attestée. Les sources historiques sont recueillies sur de rares
-          textes contradictoires, essentiellement des poèmes et contes en langue
-          galloise, des annales et chroniques décrivant la romanisation et la
-          christianisation de la Grande-Bretagne comme les Annales Cambriae et
-          l’Historia Brittonum et la vie des premiers saints de l'île bretonne,
-          comme Gildas le Sage. Le nom d'Arthur apparaît également dans
-          d'anciens poèmes tel que le Y Gododdin. Son histoire se situe à une
-          époque où le terme « Bretagne » désignait la grande moitié sud de
-          l'actuelle Grande-Bretagne.
-        </p>
+        <div class="miseEnLigne">
+          <img src="media/roiArthur.jpg" alt="Roi Arthur" />
+          <p>
+            Le roi Arthur ou Arthur Pendragon est, d'après les romances
+            médiévales, un seigneur breton qui aurait organisé la défense des
+            peuples celtes des îles Britanniques et de Bretagne armoricaine face
+            aux envahisseurs germaniques à la fin du Ve siècle ou au début du
+            VIe siècle. La légende d'Arthur est principalement inspirée par le
+            folklore1 et l'invention littéraire, et son existence historique
+            n'est pas attestée. Les sources historiques sont recueillies sur de
+            rares textes contradictoires, essentiellement des poèmes et contes
+            en langue galloise, des annales et chroniques décrivant la
+            romanisation et la christianisation de la Grande-Bretagne comme les
+            Annales Cambriae et l’Historia Brittonum et la vie des premiers
+            saints de l'île bretonne, comme Gildas le Sage. Le nom d'Arthur
+            apparaît également dans d'anciens poèmes tel que le Y Gododdin. Son
+            histoire se situe à une époque où le terme « Bretagne » désignait la
+            grande moitié sud de l'actuelle Grande-Bretagne.
+          </p>
+        </div>
       </section>
     </section>
     <footer class="uneform">
@@ -130,14 +138,13 @@
       </div>
 
       <div id="mention">
-        <p><strong>@2021, kamelottCorp</strong></p>
+        <p><strong>@2021, kamelottWilders</strong></p>
         <p>
           <strong
-            >autorisations au-delà de cette license peuvent etre obtenu aupres
-            de kamelottCorp</strong
+            >aucune autorisation n'a été délivrée pour ce site par le roi Arthur ou ses chevaliers: projet d'études sans vocation publique</strong
           >
         </p>
-        <p><strong>créé par kamelott.com</strong></p>
+        <p><strong>créé par Les Kamelots@13th Wild Squad </strong></p>
       </div>
     </footer>
     <script src="main.js"></script>
