@@ -9,6 +9,8 @@
       src="https://kit.fontawesome.com/8ea583dfaf.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>Kaamelott non-officiel site projet WCS</title>
   </head>
   <body>
@@ -111,9 +113,9 @@
     </section>
     <!-- <audio class="audio" src="media/generiqueKaamelott.mp3" autoplay="true"> -->
     <footer class="uneform">
-      <div class="mesblock">
+      <div class="mesblock" data-aos="fade-up" data-aos-duration="1000">
         <div class="footer-right">
-          <i class="fas fa-drafting-compass"></i>
+          <i class="fas fa-drafting-compass" data-aos="zoom-in" data-aos-duration="1700"></i>
           <div id="premiereprenom">
             <h2><em>Thomas Thbaut</em></h2>
             <h2><em>Damien Landouard</em></h2>
@@ -124,14 +126,14 @@
           </div>
         </div>
         <div class="trait"></div>
-        <div class="footer-left">
+        <div class="footer-left" data-aos="zoom-in" data-aos-duration="1700">
           <i id="font1" class="fab fa-js-square"></i>
           <i id="font2" class="fab fa-html5"></i>
           <i id="font3" class="fab fa-css3-alt"></i>
         </div>
       </div>
 
-      <div id="mention">
+      <div id="mention" data-aos="zoom-in" data-aos-duration="2000">
         <p><strong>@2021, kamelottWilders</strong></p>
         <p>
           <strong
@@ -142,5 +144,9 @@
       </div>
     </footer>
     <script src="main.js"></script>
+
+    <script> 
+      AOS.init();
+    </script>
   </body>
 </html>
