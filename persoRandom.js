@@ -131,4 +131,4 @@ for (let i = 0; i<persoMainTable.length; i++) {
   randomPerso(persoMainTable[i]);
 };
 
-setTimeout("location.reload()",9000);
+setTimeout("location.reload()",60000);

@@ -42,7 +42,7 @@ h4 {
 
 header {
   background: black;
-  position :fixed;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,9 +60,9 @@ header {
 }
 
 #logo a {
-  display : block;
-  width : 100%;
-  height : 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* changement du CSS pour transformation du menu en croix */
@@ -116,11 +116,10 @@ header {
 }
 
 .containerMain {
- padding-top: 90px;
- display: flex;
- flex-wrap: wrap;
+  padding-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
 }
-
 
 /*mises en formes des classes articles*/
 .articles {
@@ -324,10 +323,19 @@ header {
     color: rgb(170, 154, 154);
   }
 
+.containerMain {
+  justify-content: space-around;
+}
+
+  .articles {
+    width: 20%;
+    margin: 2em;
+  }
+
   .uneform {
     background: url(media/lefond.jpg);
     background-size: cover;
-    height: 480px;
+    height: 540px;
   }
   .mesblock {
     width: 100%;
