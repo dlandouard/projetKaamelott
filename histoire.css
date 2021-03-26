@@ -42,12 +42,13 @@ h4 {
 
 header {
   background: black;
-  position :fixed;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70px;
   width: 100%;
+  z-index: 1;
 }
 
 #logo {
@@ -57,6 +58,12 @@ header {
   width: 35%;
   height: 100%;
   margin: 20px;
+}
+
+#logo a {
+  display : block;
+  width : 100%;
+  height : 100%;
 }
 
 /* changement du CSS pour transformation du menu en croix */
@@ -110,7 +117,7 @@ header {
 }
 
 .containerMain {
- padding-top: 90px;
+  padding-top: 90px;
 }
 
 /*image d'accueil*/
@@ -139,6 +146,9 @@ header {
   border-radius: 5px;
   padding: 5px;
   box-shadow: 2px 2px 2px gray, -1px -1px 2px white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .articles h2 {
@@ -178,7 +188,6 @@ header {
 /* intégration vidéo teaser*/
 #video {
   max-width: 100%;
-  height: calc (100vh - 95px);
   margin: 5px auto 5px auto;
   display: block;
   box-shadow: 5px 5px 5px grey;
@@ -188,9 +197,48 @@ header {
   visibility: hidden;
 }
 
-.persoCitation {
-  text-align: center !important;
-  font-size: 1.5em;
+#slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 300%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation-duration: 10s;
+  animation-name: slidy;
+  animation-iteration-count: infinite;
+}
+
+#slider figure img {
+  width: 33.33333333333333333333333333333333333333333333333333333333333333%;
+  height: auto;
+  float: left;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  15% {
+    left: 0%;
+  }
+  30% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  60% {
+    left: -200%;
+  }
+  75% {
+    left: -200%;
+  }
 }
 
 .uneform {
@@ -333,24 +381,35 @@ header {
     color: rgb(170, 154, 154);
   }
 
-  #webscalibur {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-    max-width: 1500px;
-    border-radius: 0 0 30px 30px;
+  .articles {
+    padding: 2em;
   }
 
-  #webscalibur img {
-    width: 90%;
-    height: 80%;
-    margin: 0 auto 0 auto;
+  .articles h2{
+    margin-bottom: 1em;
   }
-  #webscalibur figcaption {
-    font-size: 2rem;
+
+  .miseEnLigne {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
-  
+  .miseEnLigne img {
+    width: 20%;
+    margin:0;
+  }
+
+  .miseEnLigne p {
+    margin-left: 10em;
+    width: 40%;
+    line-height: 2;
+  }
+
+  #slider {
+    width: 25%;
+  }
+
   .uneform {
     background: url(media/lefond.jpg);
     background-size: cover;

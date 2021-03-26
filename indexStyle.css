@@ -59,6 +59,12 @@ header {
   margin: 20px;
 }
 
+#logo a {
+  display : block;
+  width : 100%;
+  height : 100%;
+}
+
 /* changement du CSS pour transformation du menu en croix */
 #menu-burger {
   position: absolute;
@@ -111,6 +117,7 @@ header {
 
 .containerMain {
  padding-top: 90px;
+ padding-bottom: 
 }
 
 /*image d'accueil*/
@@ -280,16 +287,6 @@ header {
   font-size: 12px;
 }
 
-@media screen and (min-width: 640px) {
-  #video {
-    width: 79%;
-    height: 640px;
-    margin: 5px auto 5px auto;
-    display: block;
-    box-shadow: 5px 5px 5px grey;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   #menu-burger {
     display: none;
@@ -334,6 +331,7 @@ header {
   }
 
   #webscalibur {
+    margin-top: 0;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -354,42 +352,43 @@ header {
   #containerIndex {
     width: 90%;
     max-width: 1500px;
-    height: 1100px;
-    margin: auto;
+    height: 900px;
+    margin: 0 auto 0 auto;
     display: flex;
-    justify-content: stretch;
-    align-items: stretch;
+    justify-content: space-between;
+    align-content: space-between;
     margin-top: 2em;
   }
   #forDesktopLayout {
     flex: 4;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: space-between;
     margin: 0;
   }
   .articles {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
-    margin: 0;
-    padding: 2em;
+    width: 92%;
+    padding: 1em;
+    margin : 0;
   }
+  
   .articles h2 {
-    padding-bottom: 2em;
     width: 100%;
   }
 
   .articles img {
     width: 40%;
-    margin: 0 5% 0 5%;
   }
 
   .articles p {
     padding: 0;
     margin: auto 0 auto 0;
     width: 45%;
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .articles figure {
     width: 40%;
@@ -401,7 +400,7 @@ header {
   #imageDroite {
     order: +1;
   }
-
+  
   .actu {
     flex: 1;
     display: flex;
@@ -409,7 +408,6 @@ header {
     align-self: center;
     justify-content: center;
     align-items: center;
-    margin: 0;
     padding: 0;
   }
   .actu img {
@@ -522,5 +520,41 @@ header {
   }
   #mention p {
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width:1500px) {
+  #containerIndex {
+    height: 1100px;
+    margin-top: 2em;
+  }
+  .articles {
+    width: 90%;
+    padding: 2em;
+  }
+  
+  .articles h2 {
+    padding-bottom: 2em;
+  }
+
+  .articles img {
+    margin: 0 5% 0 5%;
+  }
+
+  .articles p {
+    padding: 0;
+    margin: auto 0 auto 0;
+    width: 45%;
+    font-size: 1em;
+  }
+
+  .actu {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
   }
 }
